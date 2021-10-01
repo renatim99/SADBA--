@@ -1,0 +1,197 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+ --cor-roxo-escuro: #6D6170 ;
+ --cor-vermelho-claro: #C9C0C0; 
+ --cor-vermelho-claro: #CAB9B9;
+ --cor-roxo-claro: #F9D7FF;
+ --cor-roxo-escuro: #CAB9B9; 
+ --cor-azul-claro: #10EFFD;
+ --cor-fonte: #000000;
+ --cor-branco-claro: #FFFFFF;
+ --marrom-claro: #C4C4C4;
+ --vermelho: #D71A1A; 
+ --fonte: 'Roboto',arial,sans-serif;
+}
+html{
+    font-size: 63.9% /*10px */ 
+}
+body{
+    font-family: var(--fonte);
+    color: var(--cor-fonte); 
+    font-size: 2.1rem; 
+}
+
+img{
+    max-width: 100% ; 
+}
+.container{
+    max-width: 1140px; 
+    width: 95%;
+    margin: 0 auto; 
+}
+
+header{
+    background: #6D6170;
+    height: 110px;
+}
+
+header .logo-menu{
+    display: flex;
+    width: 100%;
+    height:100px;
+    justify-content: space-between;
+    
+}
+header .logo-alt{
+    display:none;
+}
+
+header .menu-principal{
+    width: 100%;
+    height: 100%;
+
+}
+header .menu-principal > ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding:1px;
+}
+
+header .menu-principal a{
+    color: var(--cor-branco-claro);
+    text-decoration: none;
+    font-weight: bold ;
+}
+
+header .menu-principal a:hover{
+    color: var(--cor-roxo-claro);
+    border-bottom: .9rem solid var(--cor-roxo-claro);
+}
+
+header .menu-principal a.atual ,
+header .menu-principal a.atual
+{
+
+    color: var(--cor-azul-claro);
+    border-bottom: .6rem solid var(--cor-azul-claro);
+
+}
+ 
+.advogado{
+    background-color: var(--cor-roxo-claro);
+    border-top:9.5rem solid var(--cor-roxo-claro); 
+}
+
+.viajamos{
+    text-align:center;
+    background-color: var(--marrom-claro);
+}
+
+.escrito{
+    text-align:center;
+}
+
+.escritorio{
+    Background-color: var(--cor-vermelho-claro);
+    border-top:9.5rem solid var(--cor-vermelho-claro);
+}
+
+.aira{
+    text-align: center;
+}
+
+.container-conteudo{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.container-categoria a{
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.escritorio-conteudo{
+    width: 33.3%
+    padding: 1rem;
+}
+
+.localizacao{
+    background: var(--cor-roxo-claro) url("../imagens/mapa.jpg") no-repeat;
+    background-size: cover; 
+}
+
+.localizacao .mapa iframe{
+    border: .5rem solid var(--cor-azul-claro);
+    margin-top: 3rem;
+border radius:2rem ;
+width: 100% 
+}
+
+.localizacao .localizacao-mapa{
+    width: 55%
+}
+
+.localizacao .localizacao-endereco{
+    color: #fff; 
+    margin-top: 2rem; 
+}
+.localizacao .localizacao-endereco -endereco{
+    display: inline-block;
+    padding: 1rem;
+    padding-left: 5rem;
+    background: url("../imagens/icone-localiza.png") no-repeat left center; 
+    background-size: 25px;
+}
+.section-titulos{
+    text-align: center ;
+    color : #fff;
+}
+.trabalhe{
+    background: var(--cor-roxo-claro); 
+    background-size: cover; 
+}
+footer{
+    background-color: var(--cor-roxo-escuro);
+    border-top: 1.5rem solid var(--cor-roxo-escuro);
+    }
+
+.contat{
+    text-align: center; 
+}
+
+.conteudo-paginas form{
+    margin-top: 2rem;
+    padding: 2rem;
+
+    margin: 1rem auto; 
+}
+
+.campo-formulario{
+    margin: 1.5rem 0;
+}
+
+.campo-formulario input,
+.campo-formulario select
+.campo-formulario textare{
+    width:100%
+    padding: 1rem;
+}
+
+.campo-formulario input[type=radio]{
+    width: initial; 
+    margin-right:  1.5rem;
+}
+.campo-formulario fieldset{
+    padding: 2rem;
+}
